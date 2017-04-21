@@ -1,0 +1,354 @@
+body {
+	font: 400 15px Lato, sans-serif;
+	line-height: 1.8;
+	color: #818181;
+	height: 100%;
+	width: 100%;
+	font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif; 
+}
+
+.container-fluid {
+	padding: 60px 50px;
+}
+
+.bg-grey {
+	background-color: #f6f6f6;
+}
+
+						/*	(about - company line)	*/
+hr {
+	border-color: #F05F40;
+	border-width: 3px;
+	max-width: 50px;
+}
+
+hr.light {
+	border-color: #222;
+}
+
+h2 {
+	font-size: 24px;
+	text-transform: uppercase;
+	color: #303030;
+	font-weight: 600;
+	margin-bottom: 30px;
+}
+
+h4 {
+	font-size: 19px;
+	line-height: 1.375em;
+	color: #303030;
+	font-weight: 400;
+}
+
+							/*	(navbar)	*/
+.navbar {
+	margin-bottom: 0;
+	background-color: #222;
+	z-index: 9999;
+	border: 0;
+	font-size: 12px !important;
+	line-height: 1.42857143 !important;
+	letter-spacing: 4px;
+	border-radius: 0;
+	font-family: Montserrat, sans-serif;
+}
+
+/* The Aimers color font n hovering  */
+.navbar .navbar-brand {
+	color: #fed136;
+	!
+	important;
+}
+
+.navbar .navbar-brand:hover {
+	color: #fff;
+	!
+	important;
+}
+
+.navbar-nav li a {
+	color: #f4511e !important;
+}
+
+.navbar-nav li a:hover {
+	color: #fff !important;
+}
+
+ .navbar-nav li.active a {
+	color: #f4511e !important;
+	background-color: #fff !important;
+} 
+
+.navbar-default .navbar-toggle {
+	border-color: transparent;
+	color: #fff !important;
+	background-color: #eee !important;
+}
+
+.navbar-default .navbar-toggle :hover, .navbar-default .navbar-toggle :focus,
+	.navbar-default .navbar-toggle :active {
+	background-color: #eee;
+}
+
+.slideanim {
+	visibility: hidden;
+}
+
+.slide {
+	animation-name: slide;
+	-webkit-animation-name: slide;
+	animation-duration: 1s;
+	-webkit-animation-duration: 1s;
+	visibility: visible;
+}
+
+@
+keyframes slide { 0% {
+	opacity: 0;
+	transform: translateY(70%);
+}
+
+100%
+{
+opacity: 1;
+transform: translateY(0%);
+}
+}
+@-webkit-keyframes slide { 0% {
+	opacity: 0;
+	-webkit-transform: translateY(70%);
+}
+
+100%
+{
+opacity: 1;
+-webkit-transform: translateY(0%);
+}
+}
+@media screen and (max-width: 768px) {
+	.col-sm-4 {
+		text-align: center;
+		margin: 25px 0;
+	}
+	.btn-lg {
+		width: 100%;
+		margin-bottom: 35px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.logo {
+		font-size: 150px;
+	}
+}
+
+
+								/*	(header)	*/
+								
+header {
+	background-image: url('../images/header.jpg');
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+	text-align: center;
+	color: white;
+}
+
+#header-p {
+	color: #f4511e; 
+}
+
+header .intro-text {
+	padding-top: 100px;
+	padding-bottom: 50px;
+}
+
+header .intro-text .intro-lead-in {
+	font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial,
+		sans-serif;
+	font-style: italic;
+	font-size: 22px;
+	line-height: 22px;
+	margin-bottom: 25px;
+}
+
+header .intro-text .intro-heading {
+	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial,
+		sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 50px;
+	line-height: 50px;
+	margin-bottom: 25px;
+}
+
+@media ( min-width : 768px) {
+	header .intro-text {
+		padding-top: 300px;
+		padding-bottom: 200px;
+	}
+	header .intro-text .intro-lead-in {
+		font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial,
+			sans-serif;
+		font-style: italic;
+		font-size: 40px;
+		line-height: 40px;
+		margin-bottom: 25px;
+	}
+	header .intro-text .intro-heading {
+		font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial,
+			sans-serif;
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 75px;
+		line-height: 75px;
+		margin-bottom: 50px;
+	}
+}
+
+							/* (header) - login/logout & send button -  */
+.btn-default {
+	color: #222222;
+	background-color: white;
+	border-color: white;
+	-webkit-transition: all 0.35s;
+	-moz-transition: all 0.35s;
+	transition: all 0.35s;
+}
+
+.btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active,
+	.btn-default.active, .open>.dropdown-toggle.btn-default {
+	color: #222222;
+	background-color: #fed136;
+	border-color: #ededed;
+}
+
+.btn {
+	font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+	border: none;
+	border-radius: 300px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.btn-xl {
+	padding: 15px 30px;
+}
+
+
+								/*	(Team - Pictures)	*/
+
+.thumbnail {
+	padding: 0 0 15px 0;
+	border: none;
+	border-radius: 0;
+}
+
+.thumbnail img {
+	width: 100%;
+	height: 100%;
+	margin-bottom: 10px;
+}
+
+								/*	(Carousal)  */
+								
+.carousel-control.right, .carousel-control.left {
+	background-image: none;
+	color: #f4511e;
+}
+
+.carousel-indicators li {
+	border-color: #f4511e;
+}
+
+.carousel-indicators li.active {
+	background-color: #f4511e;
+}
+
+.item h4 {
+	font-size: 19px;
+	line-height: 1.375em;
+	font-weight: 400;
+	font-style: italic;
+	margin: 70px 0;
+}
+
+.item span {
+	font-style: normal;
+}
+
+									/*	(Contact - US)	*/
+div#contact {
+	background-color: #333;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url('../images/map-image.png');
+}
+
+h1#contact-heading {
+	color: white;
+}
+
+div#contact-p {
+	color: white;
+}
+
+ul.social-buttons {
+	margin-bottom: 0;
+}
+
+ul.social-buttons li a {
+	display: block;
+	background-color: #222;
+	height: 40px;
+	width: 40px;
+	border-radius: 100%;
+	font-size: 20px;
+	line-height: 40px;
+	color: white;
+	outline: none;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li a:active
+	{
+	background-color: #f4511e;
+}
+
+
+									/* (footer)  */
+
+/* /* footer {
+	padding: 20px 0;
+	position: relative;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 1rem;
+	background-color: #efefef;
+	text-align: center;
+} */
+
+footer .glyphicon {
+	font-size: 20px;
+	margin-bottom: 20px;
+	color: #f4511e;
+} 
+
+ footer {
+  padding: 25px 0;
+  text-align: center;
+}
+/*  .footer span.copyright {
+  line-height: 40px;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  text-transform: none;
+}  */ 
